@@ -7,35 +7,41 @@ import {
 
 /* ====== DADOS DA EMPRESA — edite aqui ====== */
 const COMPANY = {
-  name: "CAON GUINCHOS",
+  name: "AGENOR CAON GUINCHOS",
   city: "Caxias do Sul - RS",
-  phoneMain: "+55 49 99634-738",
-  phoneMainDigits: "554999634738",
-  phoneAlt: "+55 49 99582-481",
-  phoneAltDigits: "554999582481",
+  phoneMain: "+55 54 99958-2481",
+  phoneMainDigits: "5554999582481",
+  phoneAlt: "+55 54 99963-4738",
+  phoneAltDigits: "5554999634738",
   logo: "/logo.png", // troque o arquivo da logo aqui
   mapUrl: "https://www.google.com/maps?q=Caxias+do+Sul+-+RS&output=embed", // URL_DO_MAPA_AQUI
 };
-const WA_TEXT = encodeURIComponent("Olá, CAON GUINCHOS! Preciso de um guincho.");
+const WA_TEXT = encodeURIComponent("Olá, AGENOR CAON GUINCHOS! Preciso de um guincho.");
 const waLink = (text = WA_TEXT) => `https://wa.me/${COMPANY.phoneMainDigits}?text=${text}`;
 const telMain = `tel:+${COMPANY.phoneMainDigits}`;
 const telAlt = `tel:+${COMPANY.phoneAltDigits}`;
 
 /* Galeria — substitua pelos arquivos reais em /public/images */
 const GALLERY = [
-  { src: "/images/guincho-1.jpg", alt: "Caminhão guincho plataforma da CAON GUINCHOS transportando um carro" },
+  { src: "/images/guincho-1.jpg", alt: "Caminhão guincho plataforma da AGENOR CAON GUINCHOS transportando um carro" },
   { src: "/images/guincho-2.jpg", alt: "Operador prendendo veículo na plataforma do guincho durante atendimento noturno" },
   { src: "/images/guincho-3.jpg", alt: "Guincho plataforma em rodovia da Serra Gaúcha, região de Caxias do Sul" },
   { src: "/images/guincho-4.jpg", alt: "Atendimento de guincho em veículo avariado na cidade" },
   { src: "/images/guincho-5.jpg", alt: "Guincho realizando transporte seguro de veículo em área urbana" },
-  { src: "/images/guincho-6.jpg", alt: "Equipe da CAON GUINCHOS em atendimento de emergência" },
+  { src: "/images/guincho-6.jpg", alt: "Equipe da AGENOR CAON GUINCHOS em atendimento de emergência" },
   { src: "/images/guincho-7.jpg", alt: "Veículo em plataforma do guincho preparado para remoção" },
   { src: "/images/guincho-8.jpg", alt: "Guincho em operação em Caxias do Sul e região" },
   { src: "/images/guincho-9.jpg", alt: "Atendimento de guincho para veículo com pane ou acidente" },
-  { src: "/images/guincho-10.jpg", alt: "Guincho da CAON GUINCHOS em deslocamento para atendimento" },
+  { src: "/images/guincho-10.jpg", alt: "Guincho da AGENOR CAON GUINCHOS em deslocamento para atendimento" },
   { src: "/images/guincho-11.jpg", alt: "Veículo sendo transportado com segurança pela equipe" },
   { src: "/images/guincho-12.jpg", alt: "Guincho da empresa em atendimento rápido e profissional" },
   { src: "/images/guincho-13.jpg", alt: "Operação de remoção e transporte de veículos em rodovia" },
+  { src: "/images/guincho-14.jpg", alt: "Guincho em atendimento para remoção de veículo" },
+  { src: "/images/guincho-15.jpg", alt: "Caminhão guincho em serviço de transporte veicular" },
+  { src: "/images/guincho-16.jpg", alt: "Atendimento de guincho com plataforma para veículo" },
+  { src: "/images/guincho-17.jpg", alt: "Guincho preparado para transporte seguro de automóvel" },
+  { src: "/images/guincho-18.jpg", alt: "Serviço de guincho em Caxias do Sul e região" },
+  { src: "/images/guincho-19.jpg", alt: "Veículo sendo atendido por guincho plataforma" },
 ];
 
 const SERVICES = [
@@ -61,8 +67,8 @@ const NAV = [
   { href: "#regiao", label: "Região" },
 ];
 
-const TITLE = "Guincho 24 horas em Caxias do Sul - RS | CAON GUINCHOS";
-const DESC = "CAON GUINCHOS: guincho 24 horas em Caxias do Sul - RS e região. Remoção e transporte de veículos com atendimento rápido. Chame no WhatsApp ou ligue.";
+const TITLE = "Guincho 24 horas em Caxias do Sul - RS | AGENOR CAON GUINCHOS";
+const DESC = "AGENOR CAON GUINCHOS: guincho 24 horas em Caxias do Sul - RS e região. Remoção e transporte de veículos com atendimento rápido. Chame no WhatsApp ou ligue.";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -175,7 +181,7 @@ function Hero() {
           <span className="relative flex size-2"><span className="absolute inline-flex size-full animate-ping rounded-full bg-brand opacity-60" /><span className="relative inline-flex size-2 rounded-full bg-brand" /></span>
           Disponível agora · 24h
         </span>
-        <p className="mt-6 font-display text-sm font-semibold tracking-[0.25em] text-primary">CAON GUINCHOS</p>
+        <p className="mt-6 font-display text-sm font-semibold tracking-[0.25em] text-primary">AGENOR CAON GUINCHOS</p>
         <h1 className="mt-3 text-4xl font-bold leading-[1.08] text-foreground md:text-6xl">
           Guincho 24 horas em <span className="text-primary">Caxias do Sul - RS</span>
         </h1>
@@ -263,7 +269,7 @@ function ContactForm() {
     e.preventDefault();
     const f = new FormData(e.currentTarget);
     const msg = [
-      "*Solicitação pelo site — CAON GUINCHOS*",
+      "*Solicitação pelo site — AGENOR CAON GUINCHOS*",
       "",
       `*Nome:* ${f.get("nome")}`,
       `*Telefone:* ${f.get("telefone")}`,
@@ -311,7 +317,7 @@ function CTA() {
     <section className="mx-auto max-w-6xl px-5">
       <div className="rounded-3xl bg-primary px-6 py-14 text-center text-primary-foreground md:px-16 md:py-20">
         <h2 className="text-3xl font-bold md:text-4xl">Precisa de um guincho?</h2>
-        <p className="mx-auto mt-4 max-w-lg opacity-85">Entre em contato com a CAON GUINCHOS. Atendimento 24 horas em Caxias do Sul - RS.</p>
+        <p className="mx-auto mt-4 max-w-lg opacity-85">Entre em contato com a AGENOR CAON GUINCHOS. Atendimento 24 horas em Caxias do Sul - RS.</p>
         <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
           <a href={waLink()} target="_blank" rel="noopener" className={`${btnBase} bg-background text-primary hover:-translate-y-0.5`}><WhatsAppIcon /> WhatsApp</a>
           <a href={telMain} className={`${btnBase} border border-primary-foreground/40 hover:bg-primary-foreground/10`}><Phone className="size-4" /> Ligar agora</a>
@@ -363,7 +369,7 @@ function Footer() {
           <p className="text-muted-foreground">PIX · Dinheiro · Cartão · Boleto</p>
         </div>
       </div>
-      <p className="mx-auto mt-12 max-w-6xl px-5 text-xs text-muted-foreground">© {new Date().getFullYear()} CAON GUINCHOS. Todos os direitos reservados.</p>
+      <p className="mx-auto mt-12 max-w-6xl px-5 text-xs text-muted-foreground">© {new Date().getFullYear()} AGENOR CAON GUINCHOS. Todos os direitos reservados.</p>
     </footer>
   );
 }
